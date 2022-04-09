@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Yoke</string>
+    <string name="yoke">YOKE</string>
+    <string name="get_started">Get Started</string>
+    <string name="logo_on_front_page">logo on front page</string>
+    <string name="background_image_on_home_page">Background image on home page</string>
+</resources>
