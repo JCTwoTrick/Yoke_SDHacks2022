@@ -97,7 +97,7 @@ public class question1 extends AppCompatActivity {
         next1.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
                 if(goals.size() != 0) {
-                    //SEND TO NEXT PAGE
+                    //SEND TO NEXT PAGE and upload goals to database
                 }
             }
         });
