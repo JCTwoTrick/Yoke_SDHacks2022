@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.yokesdhacks2022">
@@ -20,7 +21,22 @@
         <activity
             android:name=".question1"
             android:exported="false"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".AccountLogin" />
+        <activity
+            android:name=".question2"
+            android:exported="false"
+            android:parentActivityName=".question1" />
+        <activity
+            android:name=".question3"
+            android:exported="false"
+            android:parentActivityName=".question2" />
+        <activity
+            android:name=".question4"
+            android:exported="false"
+            android:parentActivityName=".question3" />
+        <activity
+            android:name=".home"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -31,5 +47,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
