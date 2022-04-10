@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.yokesdhacks2022">
@@ -9,7 +10,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.YokeSDHacks2022">
-
+        <activity
+            android:name=".AccountLogin"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".GoogleLogin"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".question1"
             android:exported="false"
@@ -39,5 +47,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
