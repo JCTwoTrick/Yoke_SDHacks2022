@@ -25,7 +25,7 @@
         android:id="@+id/start_button"
         android:layout_width="222dp"
         android:layout_height="81dp"
-        android:backgroundTint="#60B1A5"
+        android:backgroundTint="#7ACC8F"
         android:fontFamily="@font/sf_pro_display_regular"
         android:text="@string/get_started"
         android:textSize="24sp"
