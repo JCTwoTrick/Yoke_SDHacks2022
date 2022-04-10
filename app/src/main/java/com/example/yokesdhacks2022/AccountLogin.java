@@ -3,6 +3,7 @@ package com.example.yokesdhacks2022;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -42,9 +43,7 @@ public class AccountLogin extends AppCompatActivity {
             public void onClick(View v){
                 //email = emailInput.getText().toString();
                 //password = passwordInput.getText().toString();
-
-                emailInput.setText("");
-                passwordInput.setText("");
+                startActivity(new Intent(AccountLogin.this, question1.class));
             }
         });
     }
