@@ -10,9 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.YokeSDHacks2022">
         <activity
-            android:name=".question1"
+            android:name=".AccountLogin"
             android:exported="false"
             android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".GoogleLogin"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".question1"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
