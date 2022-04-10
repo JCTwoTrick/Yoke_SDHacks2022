@@ -30,7 +30,7 @@ public class question1 extends AppCompatActivity {
                    goals.remove("Maintain Weight");
                    maintain_weight.setBackgroundColor(Color.parseColor("#FF80CBC4"));
                }
-               else {
+               else if(goals.size() == 0){
                    goals.add("Maintain Weight");
                    maintain_weight.setBackgroundColor(Color.parseColor("#FF80B3CB"));
                }
@@ -44,9 +44,23 @@ public class question1 extends AppCompatActivity {
                     goals.remove("Bulk");
                     bulk.setBackgroundColor(Color.parseColor("#FF80CBC4"));
                 }
-                else {
+                else if(goals.size() == 0){
                     goals.add("Bulk");
                     bulk.setBackgroundColor(Color.parseColor("#FF80B3CB"));
+                }
+            }
+        });
+
+        final Button gain_weight = findViewById(R.id.gain_weight);
+        gain_weight.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View v) {
+                if(goals.contains("Gain Weight")) {
+                    goals.remove("Gain Weight");
+                    gain_weight.setBackgroundColor(Color.parseColor("#FF80CBC4"));
+                }
+                else if(goals.size() == 0){
+                    goals.add("Gain Weight");
+                    gain_weight.setBackgroundColor(Color.parseColor("#FF80B3CB"));
                 }
             }
         });
@@ -58,7 +72,7 @@ public class question1 extends AppCompatActivity {
                     goals.remove("Lean");
                     lean.setBackgroundColor(Color.parseColor("#FF80CBC4"));
                 }
-                else {
+                else if(goals.size() == 0){
                     goals.add("Lean");
                     lean.setBackgroundColor(Color.parseColor("#FF80B3CB"));
                 }
@@ -72,7 +86,7 @@ public class question1 extends AppCompatActivity {
                     goals.remove("Lose Weight");
                     lose_weight.setBackgroundColor(Color.parseColor("#FF80CBC4"));
                 }
-                else {
+                else if(goals.size() == 0){
                     goals.add("Lose Weight");
                     lose_weight.setBackgroundColor(Color.parseColor("#FF80B3CB"));
                 }
@@ -83,7 +97,7 @@ public class question1 extends AppCompatActivity {
         next1.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
                 if(goals.size() != 0) {
-
+                    //SEND TO NEXT PAGE
                 }
             }
         });
