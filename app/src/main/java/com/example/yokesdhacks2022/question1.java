@@ -19,6 +19,7 @@ public class question1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question1);
+        getSupportActionBar().setTitle("Goals");
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
 
         ArrayList goals = new ArrayList();
@@ -28,11 +29,11 @@ public class question1 extends AppCompatActivity {
             @Override public void onClick(View v) {
                if(goals.contains("Maintain Weight")) {
                    goals.remove("Maintain Weight");
-                   maintain_weight.setBackgroundColor(Color.parseColor("#FF80CBC4"));
+                   maintain_weight.setBackgroundColor(Color.parseColor("#7ACC8F"));
                }
                else if(goals.size() == 0){
                    goals.add("Maintain Weight");
-                   maintain_weight.setBackgroundColor(Color.parseColor("#FF80B3CB"));
+                   maintain_weight.setBackgroundColor(Color.parseColor("#3E8650"));
                }
             }
         });
@@ -42,11 +43,11 @@ public class question1 extends AppCompatActivity {
             @Override public void onClick(View v) {
                 if(goals.contains("Bulk")) {
                     goals.remove("Bulk");
-                    bulk.setBackgroundColor(Color.parseColor("#FF80CBC4"));
+                    bulk.setBackgroundColor(Color.parseColor("#7ACC8F"));
                 }
                 else if(goals.size() == 0){
                     goals.add("Bulk");
-                    bulk.setBackgroundColor(Color.parseColor("#FF80B3CB"));
+                    bulk.setBackgroundColor(Color.parseColor("#3E8650"));
                 }
             }
         });
@@ -56,11 +57,11 @@ public class question1 extends AppCompatActivity {
             @Override public void onClick(View v) {
                 if(goals.contains("Gain Weight")) {
                     goals.remove("Gain Weight");
-                    gain_weight.setBackgroundColor(Color.parseColor("#FF80CBC4"));
+                    gain_weight.setBackgroundColor(Color.parseColor("#7ACC8F"));
                 }
                 else if(goals.size() == 0){
                     goals.add("Gain Weight");
-                    gain_weight.setBackgroundColor(Color.parseColor("#FF80B3CB"));
+                    gain_weight.setBackgroundColor(Color.parseColor("#3E8650"));
                 }
             }
         });
@@ -70,11 +71,11 @@ public class question1 extends AppCompatActivity {
             @Override public void onClick(View v) {
                 if(goals.contains("Lean")) {
                     goals.remove("Lean");
-                    lean.setBackgroundColor(Color.parseColor("#FF80CBC4"));
+                    lean.setBackgroundColor(Color.parseColor("#7ACC8F"));
                 }
                 else if(goals.size() == 0){
                     goals.add("Lean");
-                    lean.setBackgroundColor(Color.parseColor("#FF80B3CB"));
+                    lean.setBackgroundColor(Color.parseColor("#3E8650"));
                 }
             }
         });
@@ -84,11 +85,11 @@ public class question1 extends AppCompatActivity {
             @Override public void onClick(View v) {
                 if(goals.contains("Lose Weight")) {
                     goals.remove("Lose Weight");
-                    lose_weight.setBackgroundColor(Color.parseColor("#FF80CBC4"));
+                    lose_weight.setBackgroundColor(Color.parseColor("#7ACC8F"));
                 }
                 else if(goals.size() == 0){
                     goals.add("Lose Weight");
-                    lose_weight.setBackgroundColor(Color.parseColor("#FF80B3CB"));
+                    lose_weight.setBackgroundColor(Color.parseColor("#3E8650"));
                 }
             }
         });
@@ -98,6 +99,7 @@ public class question1 extends AppCompatActivity {
             @Override public void onClick(View v) {
                 if(goals.size() != 0) {
                     //SEND TO NEXT PAGE
+                    startActivity(new Intent(question1.this, question2.class));
                 }
             }
         });

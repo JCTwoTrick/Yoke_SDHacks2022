@@ -10,9 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.YokeSDHacks2022">
         <activity
+            android:name=".home"
+            android:exported="false"
+            android:parentActivityName=".question4" />
+        <activity
+            android:name=".question4"
+            android:exported="false"
+            android:parentActivityName=".question3" />
+        <activity
+            android:name=".question3"
+            android:exported="false"
+            android:parentActivityName=".question2" />
+        <activity
+            android:name=".question2"
+            android:exported="false"
+            android:parentActivityName=".question1" />
+        <activity
             android:name=".question1"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
