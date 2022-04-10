@@ -11,8 +11,7 @@
         android:theme="@style/Theme.YokeSDHacks2022">
         <activity
             android:name=".home"
-            android:exported="false"
-            android:parentActivityName=".question4" />
+            android:exported="false" />
         <activity
             android:name=".question4"
             android:exported="false"
